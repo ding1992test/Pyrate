@@ -4,5 +4,7 @@ notifications:
   email: false
 python:
   - 2.7
+script:
+  - echo "no scripts"
 after_success:
   - bash <(curl -s https://scripts.scantist.com/staging/ci-travis.sh)
