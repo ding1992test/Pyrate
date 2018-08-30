@@ -1,0 +1,8 @@
+language: python
+sudo: true
+notifications:
+  email: false
+python:
+  - 2.7
+after_success:
+  - bash <(curl -s https://scripts.scantist.com/staging/ci-travis.sh)
